@@ -1,0 +1,51 @@
+* { margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; box-sizing: border-box; } 
+nav, ul { list-style: none; }
+a { text-decoration: none; cursor: pointer; opacity: 0.9; }
+a:hover { opacity: 1; }
+
+/*HEADER*/
+
+header {width: 100%; display: flex; justify-content: space-between;} 
+    header a { font-size: 1.5em; margin-left: 40 40px; }
+    header img { padding: 20px 20px;}
+
+/*HERO*/
+.hero {display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; width: 100%; height: 700px; background-image: url(../imgs/wpp1.jpg); background-repeat: no-repeat;  background-size: cover; }
+    .h2-hero {font-size: 3.9em; color: #fff};
+
+/*ABOUT*/
+
+.about { width: 100%; display: flex;}
+    .p-about { justify-content: center; align-items: center; flex-direction: column; text-align: center; width: 50%; margin-left: 25% }
+     @media (max-width: 700px)
+     {
+        .p-about { width: 100%;margin-left: 0%} 
+     }
+     .img-about { width: 50%; margin-left: 25%; }
+     @media (max-width: 700px) 
+     {
+     .img-about { width: 100%; margin-left: 0%; }
+     }
+
+/*newsletter*/
+
+.newsletter {display: flex; flex-direction: column; align-items: center; padding: 100px 50px;}
+    .newsletter { margin-top:00px; background-color: #222; display: flex; flex-direction: column; align-items: center; padding: 100px 50px;}
+    .newsletter h3 { font-size: 2rem; margin-bottom: 35px; text-align: center; color: #fff;}
+    .newsletter p { max-width: 800px; margin-bottom: 35px; text-align: center; color: #fff;}
+    .newsletter hr {background-color: #ccc; width: 200px; height: 2px;  margin-bottom: 70px; border:  none; color: #fff;}
+    .newsletter form { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 800px;}
+    .newsletter input { padding: 15px; border: 1px solid #ccc; border-radius: 4px; margin-right: 15px; flex: 1}
+    .newsletter button { padding 15px; background-color: #ccc; color: #222; text-transform: uppercase; border-radius: 4px; cursor: pointer;}
+    @media (max-width: 700px) 
+    {
+        .newsletter input { flex-basis: 100%; margin-bottom: 15px;}
+    }
+
+footer {  background-color: #fff; padding: 50px 0; align-items: center ; justify-content: space-between;}
+    footer ul {display: flex; margin-bottom: 25px;}
+    footer ul li { margin-right: 10px;}
+    footer ul li:last-child { margin-right: 0;}
+    footer ul li a { color: #222; font-size: 2rem;}
+    footer p{ color: #222; text-align: center;}
+    .p-fic { float: right; margin-left: 15%;}
